@@ -111,7 +111,7 @@ function sortByWorkload(employeesArray){
 export function getStatistics (employee) {
   const employeeWithAge = createNewArrayWithAge(employee);
     return {
-        total: dtoIn.count,
+        total: employee.length,
         workload10: countEmployeesByWorkload(employee).workload10,
         workload20: countEmployeesByWorkload(employee).workload20,
         workload30: countEmployeesByWorkload(employee).workload30,
