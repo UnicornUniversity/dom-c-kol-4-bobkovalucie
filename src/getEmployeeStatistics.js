@@ -50,7 +50,7 @@ function getMinAge(employeesArray){
             minAge = employeesArray[i].age;
         }
     }
-    return Math.round(minAge);
+    return Math.floor(minAge);
 }
 function getMaxAge(employeesArray){
     let maxAge = 0;
@@ -59,7 +59,7 @@ function getMaxAge(employeesArray){
             maxAge = employeesArray[i].age;
         }
     }
-    return Math.round(maxAge);
+    return Math.floor(maxAge);
 }
 function getMedianAge(employeesArray){
     let medianAge;
@@ -74,7 +74,7 @@ function getMedianAge(employeesArray){
         const position2 = employeesArray.length/2;
         medianAge = (sortedArrayOfEmployees[position1].age+sortedArrayOfEmployees[position2].age)/2;
     }
-    return Math.round(medianAge);
+    return Math.floor(medianAge);
 }
 function getMedianWorkload(employeesArray){
     let medianWorkload;
@@ -89,7 +89,7 @@ function getMedianWorkload(employeesArray){
         const position2 = employeesArray.length/2;
         medianWorkload= (sortedArrayOfEmployees[position1].workload+sortedArrayOfEmployees[position2].workload)/2;
     }
-    return Math.round(medianWorkload);
+    return Math.floor(medianWorkload);
 }
 function getAverageWomenWorkload(employeesArray){
     let sumWomenWorkload=0;
