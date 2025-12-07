@@ -16,7 +16,7 @@ import {
  * @returns {object} containing the statistics
  */
 export function main(dtoIn) {
-  dtoOut = getEmployeeStatistics(generateEmployeeData(dtoIn));
+  const dtoOut = getEmployeeStatistics(generateEmployeeData(dtoIn));
   return dtoOut;
 }
 
