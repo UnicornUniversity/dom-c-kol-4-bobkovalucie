@@ -1,4 +1,6 @@
-//TODO add imports if needed
+import {
+  main
+}from ./src/generateEmployeeData
 //TODO doc
 /**
  * The main function which calls the application. 
