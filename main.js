@@ -1,10 +1,10 @@
 import {
-   generateEmployeeData,
+   generateData,
    dtoIn
 }from './src/generateEmployeeData.js'
 
 import {
-  getEmployeeStatistics
+  getStatistics
 }from './src/getEmployeeStatistics.js'
 
 
@@ -21,3 +21,24 @@ export function main(dtoIn) {
 }
 
 
+/**
+ * Please, add specific description here 
+ * @param {object} dtoIn contains count of employees, age limit of employees {min, max}
+ * @returns {Array} of employees
+ */
+export function generateEmployeeData(dtoIn) {
+ dtoOut = generateData(dtoIn)
+ return dtoOut;
+}
+
+/**
+ * Please, add specific description here 
+ * @param {Array} employees containing all the mocked employee data
+ * @returns {object} statistics of the employees
+ */
+export function getEmployeeStatistics(employees) {
+  //TODO code
+  //let dtoOut = exGetEmployeeStatistics(employees);
+   dtoOut= getStatistics(employees)
+  return dtoOut;
+}
