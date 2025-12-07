@@ -157,7 +157,7 @@ function generateEmployee(minAge, maxAge, possibleDays){
     return employee;
 }
 
-const dtoIn = {
+export const dtoIn = {
     count: 50,
     age: {
         min: 35,
