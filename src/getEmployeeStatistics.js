@@ -63,7 +63,7 @@ function getMaxAge(employeesArray){
 }
 function getMedianAge(employeesArray){
     let medianAge;
-    let sortedArrayOfEmployees = employeesArray.sort((a, b) => a.age - b.age);
+    let sortedArrayOfEmployees = employeesArray.toSorted((a, b) => a.age - b.age);
 
     if (employeesArray.length%2!==0){
         const position = Math.floor(employeesArray.length/2)
@@ -78,7 +78,7 @@ function getMedianAge(employeesArray){
 }
 function getMedianWorkload(employeesArray){
     let medianWorkload;
-    let sortedArrayOfEmployees = employeesArray.sort((a, b) => a.workload - b.workload);
+    let sortedArrayOfEmployees = employeesArray.toSorted((a, b) => a.workload - b.workload);
 
     if (employeesArray.length%2!==0){
         const position = Math.floor(employeesArray.length/2)
@@ -105,7 +105,7 @@ function getAverageWomenWorkload(employeesArray){
 }
 
 function sortByWorkload(employeesArray){
-    return (employeesArray.sort((a, b) => a.workload - b.workload))
+    return (employeesArray.toSorted((a, b) => a.workload - b.workload))
 }
 
 export function getStatistics (employee) {
