@@ -27,8 +27,8 @@ export function main(dtoIn) {
  * @returns {Array} of employees
  */
 export function generateEmployeeData(dtoIn) {
- dtoOut = generateData(dtoIn)
- return dtoOut;
+   const dtoOut  = generateData(dtoIn)
+   return dtoOut;
 }
 
 /**
@@ -39,6 +39,6 @@ export function generateEmployeeData(dtoIn) {
 export function getEmployeeStatistics(employees) {
   //TODO code
   //let dtoOut = exGetEmployeeStatistics(employees);
-   dtoOut= getStatistics(employees)
+   const dtoOut = getStatistics(employees)
   return dtoOut;
 }
