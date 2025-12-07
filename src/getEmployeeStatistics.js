@@ -108,7 +108,7 @@ function sortByWorkload(employeesArray){
     return (employeesArray.sort((a, b) => a.workload - b.workload))
 }
 
-export function getEmployeeStatistics (employee) {
+export function getStatistics (employee) {
   const employeeWithAge = createNewArrayWithAge(employee);
     return {
         total: dtoIn.count,
