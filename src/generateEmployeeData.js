@@ -173,7 +173,7 @@ export const dtoIn = {
  * @returns {Array} of employees
  */
 
-export function generateEmployeeData(dtoIn) {
+export function generateData(dtoIn) {
      const dtoOut = [];
     
    // Generate array of all possible days in the age range
