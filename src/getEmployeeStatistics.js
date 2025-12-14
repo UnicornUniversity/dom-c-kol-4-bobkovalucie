@@ -45,12 +45,12 @@ function countEmployeesByWorkload(employeeArray) {
  * @param {string} employeeBirthDate - employee's birthdate in ISO string
  * @returns {number} - age in years rounded to one decimal place
  */
-function getAge(employeeBirthDate) {
+function getAge(employeeBirthdate) {
   // Get current date in milliseconds
   const todayInMS = new Date().getTime();
 
-  // Convert birth date to milliseconds
-  let birthdateInMS = new Date(employeeBirthDate).getTime();
+  // Convert birthdate to milliseconds
+  let birthdateInMS = new Date(employeeBirthdate).getTime();
 
   // Calculate age from the difference between current date and birth date
   // Converted to years (1000 ms * 60 sec * 60 min * 24 hours * 365.25 days = year)
@@ -132,18 +132,17 @@ function getMaxAge(employeesArrayWithAge) {
  * @returns {number} - median age rounded down to the nearest integer
  */
 function getMedianAge(employeesArrayWithAge) {
-  let medianAge;
 
   // Sort employees by age in ascending order
   let sortedArrayOfEmployees = employeesArrayWithAge.toSorted(
     (a, b) => a.age - b.age,
   );
 
-  // Check if the array has an odd number of elements
+  // Check if the array has an odd or even number of elements
   if (employeesArrayWithAge.length % 2 !== 0) {
     // For odd length, take the middle element
     const middleIndex = Math.floor(employeesArrayWithAge.length / 2);
-    medianAge = sortedArrayOfEmployees[middleIndex].age;
+    let medianAge = sortedArrayOfEmployees[middleIndex].age;
   }
   // For even length, calculate average of two middle elements
   else {
