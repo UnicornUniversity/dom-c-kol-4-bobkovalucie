@@ -132,7 +132,7 @@ function getMaxAge(employeesArrayWithAge) {
  * @returns {number} - median age rounded down to the nearest integer
  */
 function getMedianAge(employeesArrayWithAge) {
-
+  let medianAge;
   // Sort employees by age in ascending order
   let sortedArrayOfEmployees = employeesArrayWithAge.toSorted(
     (a, b) => a.age - b.age,
@@ -142,7 +142,7 @@ function getMedianAge(employeesArrayWithAge) {
   if (employeesArrayWithAge.length % 2 !== 0) {
     // For odd length, take the middle element
     const middleIndex = Math.floor(employeesArrayWithAge.length / 2);
-    let medianAge = sortedArrayOfEmployees[middleIndex].age;
+    medianAge = sortedArrayOfEmployees[middleIndex].age;
   }
   // For even length, calculate average of two middle elements
   else {
