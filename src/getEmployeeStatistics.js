@@ -1,7 +1,7 @@
 /**
  * Counts the number of employees for each workload.
  * @param {Array} employeeArray - array of objects
- * @returns {Object} - object containing count of employees for each workload(10, 20, 30, 40)
+ * @returns {object} - object containing count of employees for each workload(10, 20, 30, 40)
  */
 function countEmployeesByWorkload(employeeArray) {
   // Initialize counters for each workload
@@ -42,7 +42,7 @@ function countEmployeesByWorkload(employeeArray) {
 
 /**
  * Calculates the age of an employee based on their birthdate.
- * @param {string} employeeBirthDate - employee's birthdate in ISO string
+ * @param {string} employeeBirthdate - employee's birthdate in ISO string
  * @returns {number} - age in years rounded to one decimal place
  */
 function getAge(employeeBirthdate) {
@@ -232,9 +232,8 @@ function sortByWorkload(employeesArray) {
 /**
  * Calculates statistics for employees.
  * @param {Array} employee - array of objects
- * @returns {Object} - object containing all calculated statistics
+ * @returns {object} - object containing all calculated statistics
  */
-
 export function getStatistics(employee) {
   // Return default values if array is empty
   if (employee.length === 0) {
